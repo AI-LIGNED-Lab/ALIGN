@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Governance</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/" class="brand">
+        <div class="brand-icon">AI</div>
+        <div>
+            <span class="brand-name">AI Governance</span>
+            <span class="brand-subtitle">Charlotte</span>
+        </div>
+    </a>
+
+    <div class="nav-status">
+        Secure Access Portal
+    </div>
+</nav>
+
+
+<main class="landing">
+
+    <section class="hero">
+
+        <div class="hero-badge">
+            Responsible AI • Governance • Education
+        </div>
+
+        <h1>
+            Responsible AI starts with
+            <span>good governance.</span>
+        </h1>
+
+        <p>
+            A centralized portal for students and faculty to
+            access AI policies, responsible-use guidance,
+            resources and governance information.
+        </p>
+
+    </section>
+
+
+    <section class="access-section">
+
+        <div class="section-heading">
+            <h2>Access the Portal</h2>
+            <p>Select your role to continue.</p>
+        </div>
+
+
+        <div class="role-grid">
+
+            <a href="{{ url_for('login', role='student') }}"
+               class="access-card">
+
+                <div class="card-icon">S</div>
+
+                <h3>Student</h3>
+
+                <p>
+                    Access student AI policies, responsible-use
+                    guidance and educational resources.
+                </p>
+
+                <span class="card-link">
+                    Student Login →
+                </span>
+
+            </a>
+
+
+            <a href="{{ url_for('login', role='faculty') }}"
+               class="access-card">
+
+                <div class="card-icon">F</div>
+
+                <h3>Faculty</h3>
+
+                <p>
+                    Access faculty governance resources,
+                    policies and responsible AI guidance.
+                </p>
+
+                <span class="card-link">
+                    Faculty Login →
+                </span>
+
+            </a>
+
+        </div>
+
+        <div class="security-note">
+            🔒 Access is restricted to authorized Charlotte users.
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>AI Governance Portal</p>
+    <span>Responsible and transparent use of artificial intelligence.</span>
+</footer>
+
+</body>
+</html>
