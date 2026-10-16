@@ -1,114 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Governance</title>
+
+    <title>ALIGN | AI Literacy Integration and Growth Network</title>
+
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
+<!-- =========================
+     NAVBAR
+========================= -->
+
 <nav class="navbar">
+
     <a href="/" class="brand">
-        <div class="brand-icon">AI</div>
+
+        <div class="brand-icon">A</div>
+
         <div>
-            <span class="brand-name">AI Governance</span>
-            <span class="brand-subtitle">Charlotte</span>
+            <span class="brand-name">ALIGN</span>
+
+            <span class="brand-subtitle">
+                AI Literacy Integration and Growth Network
+            </span>
         </div>
+
     </a>
 
-    <div class="nav-status">
-        Secure Access Portal
-    </div>
+
+    <a href="https://sites.google.com/view/yashtadimalla/ai-ligned-lab"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="nav-status lab-link">
+
+        An AI-LIGNED Lab Project ↗
+
+    </a>
+
 </nav>
 
 
+<!-- =========================
+     MAIN
+========================= -->
+
 <main class="landing">
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
 
     <section class="hero">
 
         <div class="hero-badge">
-            Responsible AI • Governance • Education
+            Project ALIGN • AI-LIGNED Lab • UNC Charlotte
         </div>
 
+
         <h1>
-            Responsible AI starts with
-            <span>good governance.</span>
+            AI Literacy Integration
+            <span>and Growth Network.</span>
         </h1>
 
+
         <p>
-            A centralized portal for students and faculty to
-            access AI policies, responsible-use guidance,
-            resources and governance information.
+            ALIGN is a project under the AI-LIGNED Lab that brings together
+            AI literacy resources, classroom AI support, and interactive
+            learning experiences.
         </p>
 
     </section>
 
 
+    <!-- =========================
+         EXPLORE ALIGN
+    ========================= -->
+
     <section class="access-section">
 
         <div class="section-heading">
-            <h2>Access the Portal</h2>
-            <p>Select your role to continue.</p>
+
+            <h2>Explore ALIGN</h2>
+
+            <p>
+                Explore the three Phase 1 platform verticals.
+            </p>
+
         </div>
 
 
         <div class="role-grid">
 
-            <a href="{{ url_for('login', role='student') }}"
-               class="access-card">
 
-                <div class="card-icon">S</div>
+            <!-- =========================
+                 REPOSITORY
+            ========================= -->
 
-                <h3>Student</h3>
+            <a href="{{ url_for('repository') }}"
+               class="access-card card-anchor">
+
+                <div class="card-icon">
+                    R
+                </div>
+
+                <h3>
+                    AI Literacy Materials Repository
+                </h3>
 
                 <p>
-                    Access student AI policies, responsible-use
-                    guidance and educational resources.
+                    Browse and discover curated AI literacy materials
+                    through a shared resource repository.
                 </p>
 
                 <span class="card-link">
-                    Student Login →
+                    Explore →
                 </span>
 
             </a>
 
 
-            <a href="{{ url_for('login', role='faculty') }}"
-               class="access-card">
+            <!-- =========================
+                 CLASSROOM AI AGENT
+            ========================= -->
 
-                <div class="card-icon">F</div>
+            <a href="{{ url_for('classroom_agent') }}"
+               class="access-card card-anchor">
 
-                <h3>Faculty</h3>
+                <div class="card-icon">
+                    C
+                </div>
+
+                <h3>
+                    Classroom AI Agent
+                </h3>
 
                 <p>
-                    Access faculty governance resources,
-                    policies and responsible AI guidance.
+                    Explore retrieval-grounded AI assistance designed
+                    to support classroom learning.
                 </p>
 
                 <span class="card-link">
-                    Faculty Login →
+                    Explore →
                 </span>
 
             </a>
 
-        </div>
 
-        <div class="security-note">
-            🔒 Access is restricted to authorized Charlotte users.
+            <!-- =========================
+                 PROMPT TO GAME
+            ========================= -->
+
+            <a href="{{ url_for('prompt_to_game') }}"
+               class="access-card card-anchor">
+
+                <div class="card-icon">
+                    G
+                </div>
+
+                <h3>
+                    Prompt-to-Game
+                </h3>
+
+                <p>
+                    Transform educational prompts into interactive
+                    AI-assisted learning activities.
+                </p>
+
+                <span class="card-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
         </div>
 
     </section>
 
+
+    <!-- =========================
+         WHO WE ARE
+    ========================= -->
+
+    <section class="who-we-are">
+
+        <div class="who-content">
+
+            <span class="who-label">
+                Who We Are
+            </span>
+
+
+            <h2>
+                Part of the AI-LIGNED Lab
+            </h2>
+
+
+            <p>
+                ALIGN is a project of the AI-LIGNED Lab at UNC Charlotte,
+                connecting AI literacy resources, classroom support,
+                and interactive learning experiences.
+            </p>
+
+
+            <a href="https://sites.google.com/view/yashtadimalla/ai-ligned-lab"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lab-button">
+
+                Visit the AI-LIGNED Lab →
+
+            </a>
+
+        </div>
+
+    </section>
+
+
 </main>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-    <p>AI Governance Portal</p>
-    <span>Responsible and transparent use of artificial intelligence.</span>
+
+    <p>
+        Project ALIGN
+    </p>
+
+    <span>
+        AI Literacy Integration and Growth Network
+    </span>
+
+    <span>
+        A project under the AI-LIGNED Lab
+    </span>
+
+    <span>
+        College of Computing and Informatics · UNC Charlotte
+    </span>
+
 </footer>
 
+
 </body>
+
 </html>
